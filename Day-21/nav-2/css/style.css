@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster&family=Noto+Sans:wght@400;500;600;700;800&family=Poppins:wght@400;600;900&family=Roboto:wght@400;500;700&display=swap");
+/* font-family: 'Lobster', cursive;
+font-family: 'Noto Sans', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Roboto', sans-serif; */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Roboto", sans-serif;
+  background-color: #d6a2e8;
+}
+nav {
+  min-width: 500px;
+  min-height: 40px;
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 5px;
+}
+nav ul li {
+  list-style: none;
+  width: 100px;
+  height: 100%;
+  display: inline-block;
+  /* background-color: red; */
+  text-align: center;
+  padding: 3px 15px;
+  position: relative;
+  z-index: 10;
+}
+ul li a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+  /* background-color: #fff; */
+  line-height: 40px;
+  text-shadow: 4px -1px 2px rgba(178, 218, 0, 0.6);
+}
+ul li::before {
+    content: "";
+    position: absolute;
+    top: 5%;
+    left: 15%;
+    transform: translate(-50%, -50%);
+    width: 70px;
+    height: 5px;
+    transform: skew(45deg);
+    background-color: #182c61;
+    z-index: -1;
+    opacity: 0;
+    transition: 0.5s ease-in-out;
+    border-radius: 5px;
+}
+
+ul li::after {
+  content: "";
+  position: absolute;
+  top: 80%;
+  left: 15%;
+  transform: translate(-50%, -50%);
+  width: 70px;
+  height: 5px;
+  transform: skew(45deg);
+  background-color: #182c61;
+  z-index: -1;
+  opacity: 0;
+  transition: 0.3s ease-in-out;
+  border-radius: 5px;
+}
+
+ul li:hover::before,
+ul li:hover::after{
+  opacity: 1;
+  
+}
+
+ul li:hover a {
+  color: #000000;
+  text-shadow: none;
+}
+/* i changed 3 variations in after */
+/* task add before and after styling to list by tutor joe */

@@ -1,0 +1,9 @@
+.table{
+    border-collapse: collapse;
+    /* outline: none; */
+    /* border: none; */
+    border: 3px solid red;
+}
+.table tfoot{
+    background-color: orange;
+}

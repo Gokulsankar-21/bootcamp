@@ -1,0 +1,210 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster&family=Noto+Sans:wght@400;500;600;700;800&family=Poppins:wght@400;600;900&family=Roboto:wght@400;500;700&display=swap");
+/* font-family: 'Lobster', cursive;
+font-family: 'Noto Sans', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Roboto', sans-serif; */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+button{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;}
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: #dff8d5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 22px;
+}
+.buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+.group {
+  display: flex;
+  justify-self: center;
+  align-items: center;
+  gap: 30px;
+}
+/* style-1 */
+.button {
+  min-width: 150px;
+  height: 70px;
+}
+.button button {
+  width: 100%;
+  height: 100%;
+  /* font-size: 25px; */
+  font-size: 1em;
+  outline: none;
+ 
+  transition: 0.3s ease-in-out;
+}
+#btn1 {
+  background-color: #fff;
+  border: 2px solid #23aaf2;
+  color: #23aaf2;
+  border-radius: 5px;
+}
+#btn1:hover {
+  background-color: #23aaf2;
+  color: #fff;
+  border: 2px solid #fff;
+  transform: translateX(-30px);
+}
+
+#btn2 {
+  background-color: #23aaf2;
+  border: 2px solid #fff;
+  color: #fff;
+  border-radius: 50px;
+}
+
+#btn2:hover {
+  background-color: #fff;
+  border: 2px solid #23aaf2;
+  color: #23aaf2;
+  transform: translateX(30px);
+}
+
+/* style-2 */
+.button2 {
+  min-width: 80px;
+  height: 80px;
+}
+.button2 button{
+    width: 100%;
+    height: 100%;
+    border-radius: 50px;
+    font-size: 1.2rem;
+    transition: 0.2s ease-in-out;
+}
+#btn3{
+    color:#d35400 ;
+    background-color: #fff;
+    border: 2px solid #d35400;
+}
+#btn3:hover{
+    color:#fff ;
+    background-color: #d35400;
+    border: 2px solid #fff;
+    transform: scale(1.9);
+}
+#btn4{
+    color:#27ae60 ;
+    background-color: #fff;
+    border: 2px solid #27ae60;
+}
+#btn4:hover{
+    color: #fff;
+    background-color: #27ae60;
+    border: 2px solid #fff;
+    transform: scale(0.9);
+}
+#btn5{
+    color:#f71900 ;
+    background-color: #fff;
+    border: 2px solid #ff1900;
+}
+#btn5:hover{
+    color: #fff;
+    background-color: #ff1900;
+    border: 2px solid #fff;
+    transform: translateY(-40px) scale(2);
+}
+
+/* style-3 */
+
+.button3 {
+    min-width: 100px;
+    height: 100px;
+}
+.button3 button{
+    width: 100%;
+    height: 100%;
+    transition: 0.3s linear;
+    border-radius: 5px;
+}
+.button3 #btn6{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+#btn6{
+    color:#f1c40f ;
+    background-color: #fff;
+    border: 2px solid #f1c40f;
+}
+#btn6:hover{
+    color: #fff;
+    background-color: #f1c40f;
+    border: 2px solid #fff;
+    transform:translate(-30px,-30px);
+}
+.button3 #btn7{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+#btn7{
+    color:#fff ;
+    background-color: #16a085;
+    border: 2px solid #fff;
+}
+#btn7:hover{
+    color: #16a085;
+    background-color: #fff;
+    border: 2px solid #16a085;
+    transform:translate(30px,30px) scale(0.9);
+}
+
+/* style-4 */
+
+.button4 {
+    min-width: 150px;
+    height: 75px;
+}
+.button4 button{
+    width: 100%;
+    height: 100%;
+    font-size: 1em;
+    transition: 0.3s linear;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+#btn8{
+    color:#fff ;
+    background-color: #eccc68;
+    border: 2px solid #fff;
+}
+#btn8:hover{
+    color: #eccc68;
+    background-color: #fff;
+    border: 2px solid #eccc68;
+    transform:translatey(-30px);
+}
+#btn9{
+    color:#fff ;
+    background-color: #57606f;
+    border: 2px solid #fff;
+}
+#btn9:hover{
+    color: #57606f;
+    background-color: #fff;
+    border: 2px solid #57606f;
+    transform:translatey(30px);
+}

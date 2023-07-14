@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Table Using HTML</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <table border='10' class="table" cellpadding="10px" cellspacing="100px">
+      <caption>
+        Student Details
+      </caption>
+      <colgroup>
+        <col width="150px" />
+        <col width="60px" />
+        <col />
+        <col width="150px" />
+      </colgroup>
+
+      <thead width="50px">
+        <tr style="background-color: orange">
+          <th>Name</th>
+          <th>Age</th>
+          <th>Gender</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>gokul</td>
+          <td>22</td>
+          <td>Male</td>
+        </tr>
+        <tr>
+          <td>shalini</td>
+          <td>22</td>
+          <td>Female</td>
+        </tr>
+        <tr>
+          <td>sankar</td>
+          <td>23</td>
+          <td>Male</td>
+        </tr>
+        <tr>
+          <td>rose</td>
+          <td>21</td>
+          <td rowspan="2">Female</td>
+        </tr>
+        <tr>
+          <td>angelena</td>
+          <td>21</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td colspan="3">Todal Student</td>
+        </tr>
+      </tfoot>
+    </table>
+  </body>
+</html>

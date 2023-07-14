@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster&family=Noto+Sans:wght@400;500;600;700;800&family=Poppins:wght@400;600;900&family=Roboto:wght@400;500;700&display=swap");
+/* font-family: 'Lobster', cursive;
+font-family: 'Noto Sans', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Roboto', sans-serif; */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #4c5c72;
+  font-family: "Poppins", sans-serif;
+}
+.box {
+  width: 600px;
+  margin: 10px auto;
+}
+.table {
+  display: table;
+  width: 100%;
+  /* background-color: red; */
+  border-collapse: collapse;
+  text-transform: capitalize;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.caption {
+  display: table-caption;
+  color: #ffbc03;
+  text-align: center;
+  font-size: 25px;
+}
+.cell {
+  display: table-cell;
+  padding: 5px 10px;
+}
+
+.header {
+  display: table-header-group;
+  color: #fff;
+  background-color: #06406c !important;
+  height: 40px;
+  font-size: 20px;
+
+}
+.header .cell {
+  border: 2px solid #06406c;
+  outline: none;
+  font-weight: 600;
+}
+.row_group {
+  display: table-row-group;
+  /* background-color: red; */
+}
+.row {
+  display: table-row;
+  font-size: 16px;
+  font-weight: 400;
+}
+.row:nth-child(odd) {
+  background-color: rgb(251, 241, 188);
+}
+.row:nth-child(2n) {
+  background-color: #d4e5ff;
+}
+
+/* .col_group{
+
+    display: table-column-group;
+}
+.col{
+    display: table-column;
+}
+.col3{
+    text-align: center;
+    width: 200px;
+    background-color: #fff;
+} */
+
+@media (max-width: 700px) {
+  .row {
+    display: block;
+    font-size: 16px;
+    padding: 10px 0px;
+    border-bottom: 1px solid #73777c51;
+  }
+  .cell {
+    display: block;
+  }
+  .row.header .cell {
+    display: none;
+  }
+  .row.header {
+    height: 35px;
+  }
+  .row .cell::before {
+    content: attr(data-title);
+    display: block;
+    text-transform: uppercase;
+    font-size: 10px;
+    margin-bottom: -3px;
+    color: rgba(66, 65, 65, 0.923);
+  }
+  .caption{
+    display: block;
+    width: 100%;
+    /* background-color: red; */
+    position: absolute;
+    left: 0;
+    z-index: 9;
+    color: white;
+
+  }
+}
